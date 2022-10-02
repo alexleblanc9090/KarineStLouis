@@ -36,7 +36,7 @@
   </head>
   <body>   
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
           <img src="./images/logo.svg" width="300" height="90" class="d-inline-block align-top" alt="">
         </a>
@@ -74,13 +74,20 @@
       </nav>
     </header>
     <main>
+      <!-- CAROUSEL SECTION -->
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <!-- END Indicators -->
+
+        <!-- CAROUSEL -->
         <div class="carousel-inner">
+          <!-- First slide (Active) -->
           <div class="carousel-item active">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
 
@@ -92,6 +99,9 @@
               </div>
             </div>
           </div>
+          <!-- END First slide (Active) -->
+
+          <!-- Second slide -->
           <div class="carousel-item">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
 
@@ -103,6 +113,9 @@
               </div>
             </div>
           </div>
+          <!-- END Second slide -->
+
+          <!-- Third slide -->
           <div class="carousel-item">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
 
@@ -114,7 +127,11 @@
               </div>
             </div>
           </div>
+          <!-- END Third slide-->
         </div>
+        <!-- END CAROUSEL -->
+
+        <!-- Each side buttons (Previous and Next) -->
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -123,7 +140,10 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+        <!-- END Each side buttons (Previous and Next) -->
+
       </div>
+      <!-- END CAROUSEL SECTION -->
 
       
       <div class="container marketing">
@@ -131,7 +151,7 @@
         <!-- Service et informations section -->
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Service offert et tarification</h2>
+            <h2 class="featurette-heading">Services offerts</h2>
             <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
           </div>
           <div class="col-md-5">
@@ -146,9 +166,11 @@
 
         <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
 
+        <!-- BIO -->
+
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <p class="lead rounded">Salut ! ✨<br><br>
+            <p class="lead rounded overflow-auto" style="height: 500px;">Salut ! ✨<br><br>
               Moi, c'est Karine St-Louis, votre kinésithérapeute ! <br><br>
               Dernièrement, je me disais qu'il faudrait bien que les gens sachent qui est derrière cette page...Je n'ai jamais vraiment fait de présentation. <br>
               Pour ceux qui me connaissent bien, bon ça va, vous n'en apprendrez pas beaucoup, mais pour les autres, il est temps de vous raconter mon parcours 📖<br>
@@ -169,57 +191,70 @@
           </div>
         </div>
 
+        <!-- END BIO -->
+
+        <!-- REVIEWS SECTION -->
+
         <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
-                <h3>Quelques commentaires de mes clients</h3>
-                <!-- Review section -->
-                <div class="row gap-2">
-                  <div class="col rounded shadow reviewCard">
-                    <h2 class="reviewTitle">Alexandre Leblanc</h2>
-                    <p class="reviewText">"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</p>
-                    <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
-                  </div>
-                  <div class="col rounded shadow reviewCard">
-                    <h2 class="reviewTitle">Guillaume Tardif</h2>
-                    <p class="reviewText">"Another exciting bit of representative placeholder content. This time, we've moved on to the second column."</p>
-                    <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
-                  </div>
-                  <div class="col rounded shadow reviewCard">
-                    <h2 class="reviewTitle">Sydney Crosby</h2>
-                    <p class="reviewText">"And lastly this, the third column of representative placeholder content."</p>
-                    <p class="reviewStarts"><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
-                  </div>
-                </div>
-                <!-- END Review section -->
+        <h3 style="text-align: center; margin-bottom: 1em;">Quelques commentaires de mes clients</h3>
+        <!-- Review section -->
+        <div class="row gap-2">
+          <div class="col rounded shadow reviewCard">
+            <h2 class="reviewTitle">Alexandre Leblanc</h2>
+            <p class="reviewText">"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</p>
+            <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+          </div>
+          <div class="col rounded shadow reviewCard">
+            <h2 class="reviewTitle">Guillaume Tardif</h2>
+            <p class="reviewText">"Another exciting bit of representative placeholder content. This time, we've moved on to the second column."</p>
+            <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+          </div>
+          <div class="col rounded shadow reviewCard">
+            <h2 class="reviewTitle">Sydney Crosby</h2>
+            <p class="reviewText">"And lastly this, the third column of representative placeholder content."</p>
+            <p class="reviewStarts"><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+          </div>
+        </div>
+
+        <!-- END Review section -->
         
-                <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
+        <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
+        
+        <!-- MAP SECTION -->
 
         <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Coordonnées</h2>
+          <div class="w-100">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a>
+                <br>
+                <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style>
+                <a href="https://www.embedgooglemap.net">google map html</a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END MAP SECTION -->
+
+        <hr class="featurette-divider">
+        
+        <!-- CONTACT SECTION -->
+
+        <div class="row featurette">
+          <div class="w=100">
+            <h2 class="featurette-heading" style="text-align: center;">Contactez-moi</h2>
             <p class="lead">
               Adresse: 650 boul. Arthur-Sauvé, Saint-Eustache, Québec... <br>
               Horaire: bla bla bla <br>
               Contactez-moi: bla bla bla
             </p>
           </div>
-          <div class="col-md-5">
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a>
-                <br>
-                <style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style>
-                <a href="https://www.embedgooglemap.net">google map html</a>
-                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
+        <!-- END CONTACT SECTION -->
       </div>
 
 

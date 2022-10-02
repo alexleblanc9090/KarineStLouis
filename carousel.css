@@ -14,19 +14,19 @@ body {
 }
 
 .reviewTitle{
-  color: #10336e;
+  color: white;
   font-family: "Comic Sans MS";
 }
 
 .reviewText{
   height: 50px;
   font-style: italic;
-  color: black;
+  color: white;
   font-size: 1.2em;
 }
 
 .reviewCard{
-  background-color:lightgray; 
+  background-color:#10336e; 
   padding-top:1em;
   text-align: center;
   min-width: 410px;
@@ -36,6 +36,11 @@ body {
   margin-top: auto;
 }
 
+.navbar{
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -43,6 +48,7 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+  margin-top: 150px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
