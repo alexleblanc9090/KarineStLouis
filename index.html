@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Alexandre Leblanc">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Karine St-Louis</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>   
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.svg" width="300" height="90" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                  Contact
+                </a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="tel:555-666-7777">
+                <img src="./images/smartphone-call.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                555-666-7777
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="mailto:webmaster@example.com">
+                <img src="./images/email.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" target="_blank" href="https://www.facebook.com/massotherapieksl">
+                <img src="./images/facebook.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+      <div class="container marketing">
+
+        <!-- Service et informations section -->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Service offert et tarification</h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <image href="./images/massotherapie.jpg" height="500" width="500" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- END Service et informations section -->
+
+        <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <p class="lead rounded">Salut ! ✨<br><br>
+              Moi, c'est Karine St-Louis, votre kinésithérapeute ! <br><br>
+              Dernièrement, je me disais qu'il faudrait bien que les gens sachent qui est derrière cette page...Je n'ai jamais vraiment fait de présentation. <br>
+              Pour ceux qui me connaissent bien, bon ça va, vous n'en apprendrez pas beaucoup, mais pour les autres, il est temps de vous raconter mon parcours 📖<br>
+              Dès mon plus jeune âge, j'avais comme objectif de devenir thérapeute dans le domaine du sport. C'est en août 2017 que j'ai débuté ma première formation en massothérapie. 
+              Suite à l'obtention de mon diplôme, j'ai continué mes études en kinésithérapie sportive. En janvier 2019, j'étais officiellement kinésithérapeute ! Adepte de défis et de surpassement, 
+              j'accumule les formations depuis.<br><br>
+              Ayant passé mon enfance dans les arenas, j'ai toujours adoré le monde du hockey. Comme on dit en bon québécois, j'en mange ! 🏒<br>
+              C'est donc un privilège pour moi de pouvoir combiner passion et travail. Au fil du temps, j'ai eu la chance de rencontrer des gens qui m'ont permis de me rapprocher de mon objectif. 
+              Je travaille donc, oui en clinique, mais également sur le terrain, lors d'événements sportifs. En plus de nombreux partenariats, c'est en 2022 que j'ai atteint ce pourquoi j'ai travaillé si fort....
+              J'ai obtenu le poste de thérapeute pour ma 1ere équipe sportive ! <br><br>
+              Et puis me voila ici, maintenant, avec pleins d'autres beaux projets à venir, les yeux brillants et le coeur rempli d'ambition ! ✨</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <image href="./images/Karine.jpg" height="500" width="500" />
+            </svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
+                <h3>Quelques commentaires de mes clients</h3>
+                <!-- Review section -->
+                <div class="row gap-2">
+                  <div class="col rounded shadow reviewCard">
+                    <h2 class="reviewTitle">Alexandre Leblanc</h2>
+                    <p class="reviewText">"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</p>
+                    <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+                  </div>
+                  <div class="col rounded shadow reviewCard">
+                    <h2 class="reviewTitle">Guillaume Tardif</h2>
+                    <p class="reviewText">"Another exciting bit of representative placeholder content. This time, we've moved on to the second column."</p>
+                    <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+                  </div>
+                  <div class="col rounded shadow reviewCard">
+                    <h2 class="reviewTitle">Sydney Crosby</h2>
+                    <p class="reviewText">"And lastly this, the third column of representative placeholder content."</p>
+                    <p class="reviewStarts"><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+                  </div>
+                </div>
+                <!-- END Review section -->
+        
+                <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Coordonnées</h2>
+            <p class="lead">
+              Adresse: 650 boul. Arthur-Sauvé, Saint-Eustache, Québec... <br>
+              Horaire: bla bla bla <br>
+              Contactez-moi: bla bla bla
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a>
+                <br>
+                <style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style>
+                <a href="https://www.embedgooglemap.net">google map html</a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div>
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="text-center">&copy; 2022 Karine St-Louis massothérapie kinésithérapie, Inc.</p>
+      </footer>
+    </main>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>   
+  </body>
+</html>
