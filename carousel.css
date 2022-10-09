@@ -5,6 +5,7 @@
 body {
   padding-bottom: 3rem;
   color: #5a5a5a;
+  background-color: white;
 }
 
 .lead{
@@ -19,7 +20,7 @@ body {
 }
 
 .reviewText{
-  height: 50px;
+  height: 170px;
   font-style: italic;
   color: white;
   font-size: 1.2em;
@@ -27,18 +28,13 @@ body {
 
 .reviewCard{
   background-color:#10336e; 
-  padding-top:1em;
+  padding:1em;
   text-align: center;
   min-width: 410px;
 }
 
 .reviewStarts{
   margin-top: auto;
-}
-
-.navbar{
-  background-color: white;
-  border-bottom: 1px solid black;
 }
 
 
@@ -48,7 +44,7 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -92,7 +88,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */

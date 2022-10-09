@@ -36,9 +36,9 @@
   </head>
   <body>   
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-          <img src="./images/logo.svg" width="300" height="90" class="d-inline-block align-top" alt="">
+          <img src="./images/logoOfficiel.png" width="100%" height="90" class="d-inline-block align-top" alt="">
         </a>
         
         <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,6 +83,7 @@
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <!-- END Indicators -->
 
@@ -90,13 +91,14 @@
         <div class="carousel-inner">
           <!-- First slide (Active) -->
           <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-color: #10336e;">
+              <!--<rect width="100%" height="100%" fill="#10336e"/>-->
+              <image href="./images/slide2.jpg" width="100%" height="100%"/>
+            </svg>
 
             <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              <div class="carousel-caption">
+                <h1>Évènements sportifs</h1>
               </div>
             </div>
           </div>
@@ -104,13 +106,13 @@
 
           <!-- Second slide -->
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-color: #10336e;">    
+              <image href="./images/masso.jpg" width="100%" height="100%"/>
+            </svg>
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <h1>Massothérapie</h1>
               </div>
             </div>
           </div>
@@ -118,17 +120,33 @@
 
           <!-- Third slide -->
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#10336e"/></svg>
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-color: #10336e;">
+              <image href="./images/kin.jpg" width="100%" height="100%"/>
+            </svg>
 
             <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <div class="carousel-caption">
+                <h1>Kinésithérapie</h1>
               </div>
             </div>
           </div>
           <!-- END Third slide-->
+
+          <!-- Fourth slide -->
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-color: #10336e;">
+              <!--<rect  fill="#10336e"/>-->
+              <image href="./images/slide1.jpg" width="100%" height="100%"/>
+            </svg>
+          
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Hello world</h1>
+              </div>
+            </div>
+          </div>
+          <!-- END Fourth slide-->
+
         </div>
         <!-- END CAROUSEL -->
 
@@ -146,21 +164,61 @@
       </div>
       <!-- END CAROUSEL SECTION -->
 
-      
+      <hr class="featurette-divider">
+
       <div class="container marketing">
 
         <!-- Service et informations section -->
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Services offerts</h2>
-            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading">Services offerts</h2>
+        <div class="row featurette lead rounded">
+          <div class="col">
+            <!-- Description of services -->
+              <ul>
+                <li>
+                  <b>Massothérapie</b><br>
+                  La massothérapie permet le relâchement musculaire et ainsi
+                  diminuer les inconforts reliés. Elle aide également dans la gestion du stress.
+                </li>
+                <br>
+                <li>
+                  <b>Kinésithérapie</b><br> 
+                  C’est la thérapie par le mouvement ! La kinésithérapie a pour
+                  but d’améliorer l’amplitude d’un mouvement en utilisant des techniques de
+                  massothérapie avancées, tels que les mobilisations passives, actives et/ou
+                  contrariées. Elle permet la diminution des douleurs musculaires et articulaires.
+                </li>
+                <br>
+                <li>
+                  <b>Évènements sportifs</b><br>
+                  Offrez à vos athlètes la présence d’une thérapeute
+                  qualifiée en premiers soins et massothérapie sportive en cas de blessures sur le
+                  terrain
+                </li>
+              </ul>
           </div>
-          <div class="col-md-5">
+          <div class="col">
+            <ul>
+              <li>
+                <b>Infrathérapie</b><br>
+                À l’aide de chaleur, l’infrathérapie favorise la circulation sanguine
+                et permet ainsi la détente et le relâchement. On l’utilise pour la gestion du
+                stress, pour son effet calmant et pour les troubles de circulation.
+              </li>
+              <br>
+              <li>
+                <b>Pressothérapie</b><br>
+                La pressothérapie consiste à un drainage par compression et
+                décompression. En agissant sur la circulation sanguine et lymphatique, elle
+                favorise un soulagement des troubles circulatoires. Elle est également efficace
+                lors de la récupération chez le sportif.
+              </li>
+            </ul>
+          </div>
+          <!--<div class="col-md-5">
             <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
               <image href="./images/massotherapie.jpg" height="500" width="500" />
             </svg>
-          </div>
+          </div>-->
         </div>
 
         <!-- END Service et informations section -->
@@ -171,18 +229,22 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <p class="lead rounded overflow-auto" style="height: 500px;">Salut ! ✨<br><br>
-              Moi, c'est Karine St-Louis, votre kinésithérapeute ! <br><br>
-              Dernièrement, je me disais qu'il faudrait bien que les gens sachent qui est derrière cette page...Je n'ai jamais vraiment fait de présentation. <br>
-              Pour ceux qui me connaissent bien, bon ça va, vous n'en apprendrez pas beaucoup, mais pour les autres, il est temps de vous raconter mon parcours 📖<br>
-              Dès mon plus jeune âge, j'avais comme objectif de devenir thérapeute dans le domaine du sport. C'est en août 2017 que j'ai débuté ma première formation en massothérapie. 
-              Suite à l'obtention de mon diplôme, j'ai continué mes études en kinésithérapie sportive. En janvier 2019, j'étais officiellement kinésithérapeute ! Adepte de défis et de surpassement, 
-              j'accumule les formations depuis.<br><br>
-              Ayant passé mon enfance dans les arenas, j'ai toujours adoré le monde du hockey. Comme on dit en bon québécois, j'en mange ! 🏒<br>
-              C'est donc un privilège pour moi de pouvoir combiner passion et travail. Au fil du temps, j'ai eu la chance de rencontrer des gens qui m'ont permis de me rapprocher de mon objectif. 
-              Je travaille donc, oui en clinique, mais également sur le terrain, lors d'événements sportifs. En plus de nombreux partenariats, c'est en 2022 que j'ai atteint ce pourquoi j'ai travaillé si fort....
-              J'ai obtenu le poste de thérapeute pour ma 1ere équipe sportive ! <br><br>
-              Et puis me voila ici, maintenant, avec pleins d'autres beaux projets à venir, les yeux brillants et le coeur rempli d'ambition ! ✨</p>
+            <p class="lead rounded overflow-auto" style="height: 500px;">
+              <b>Apprenez à connaître votre kinésithérapeute</b>
+              <br><br>
+              Moi, c'est Karine, kinésithérapeute du sport <br><br>
+              Dès mon plus jeune âge, j'avais comme objectif de devenir thérapeute dans le domaine du sport. 
+              C'est en août 2017 que j'ai débuté ma première formation en massothérapie. Suite à l'obtention de 
+              mon diplôme, j'ai continué mes études en kinésithérapie sportive. En janvier 2019, 
+              j'étais officiellement kinésithérapeute ! 
+              <br><br>
+              Adepte de défis et de surpassement, 
+              j'ai accumulé près de 1300h de formations, autant en thérapie manuelle qu'en premiers soins.<br>
+              Au fil du temps, j'ai eu la chance de rencontrer des gens qui m'ont permis de me 
+              rapprocher de mon objectif. Je travaille donc, oui en clinique, mais également sur le terrain, 
+              lors d'évènements sportifs. Je compte plusieurs partenariats, en plus d'être thérapeute d'une 
+              équipe sportive de la LNHB.
+            </p>
           </div>
           <div class="col-md-5 order-md-1">
             <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -201,25 +263,45 @@
         <!-- Review section -->
         <div class="row gap-2">
           <div class="col rounded shadow reviewCard">
-            <h2 class="reviewTitle">Alexandre Leblanc</h2>
-            <p class="reviewText">"Some representative placeholder content for the three columns of text below the carousel. This is the first column."</p>
+            <h2 class="reviewTitle">Rocky Archambault</h2>
+            <h5 style="color: white;">Client et propriétaire de Hockey Ballers</h5>
+            <br>
+            <p class="reviewText">
+              "Étant client avec Karine depuis quelques temps déjà, nous avons opté pour son
+              expertise lorsqu’est venu le temps pour nous de choisir notre thérapeute pour nos
+              événements sportifs. Elle est compétente et reconnue dans son domaine, nous
+              sommes heureux de pouvoir la compter parmi nous."
+            </p>
             <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
           </div>
           <div class="col rounded shadow reviewCard">
-            <h2 class="reviewTitle">Guillaume Tardif</h2>
-            <p class="reviewText">"Another exciting bit of representative placeholder content. This time, we've moved on to the second column."</p>
+            <h2 class="reviewTitle">Olivier Bernier</h2>
+            <h5 style="color: white;">Joueur des Huskies d’Anjou, LNHB</h5>
+            <br>
+            <p class="reviewText">
+              "Karine m’a grandement aidé tout au long de la saison avec mes multiples blessures.
+              Nos suivis en clinique m’ont permis un retour au jeu. Elle est professionnelle et sa
+              place est importante au sein de l’équipe."
+            </p>
             <p><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
           </div>
           <div class="col rounded shadow reviewCard">
-            <h2 class="reviewTitle">Sydney Crosby</h2>
-            <p class="reviewText">"And lastly this, the third column of representative placeholder content."</p>
+            <h2 class="reviewTitle">Laurie Hillman</h2>
+            <h5 style="color: white;">Cliente depuis plus de 3 ans</h5>
+            </br>
+            <p class="reviewText">
+              "Karine, c'est la meilleure massothérapeute que j’ai eue ! 
+              Elle sait régler mes problèmes en un seul rendez-vous. 
+              Son expertise est irréprochable. 
+              Merci ! "
+            </p>
             <p class="reviewStarts"><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
           </div>
         </div>
 
         <!-- END Review section -->
         
-        <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
+        <hr> <!-- VALIDATE WITH KARINE -->
         
         <!-- MAP SECTION -->
 
@@ -227,33 +309,40 @@
           <div class="w-100">
             <div class="mapouter">
               <div class="gmap_canvas">
-                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=172%20rue%20Notre-Dame,%20Repentigny,%20local%20101,%20J6A%202P7&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
                 <a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a>
                 <br>
                 <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style>
-                <a href="https://www.embedgooglemap.net">google map html</a>
+                <a href="https://www.embedgooglemap.net"></a>
                 <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
               </div>
             </div>
           </div>
         </div>
 
+        <!--
+
+        -->
+
         <!-- END MAP SECTION -->
 
         <hr class="featurette-divider">
         
         <!-- CONTACT SECTION -->
-
-        <div class="row featurette">
-          <div class="w=100">
-            <h2 class="featurette-heading" style="text-align: center;">Contactez-moi</h2>
-            <p class="lead">
-              Adresse: 650 boul. Arthur-Sauvé, Saint-Eustache, Québec... <br>
-              Horaire: bla bla bla <br>
-              Contactez-moi: bla bla bla
-            </p>
+        <h2 class="" style="text-align: center;">Contactez-moi</h2>
+          <div class="row w-100 lead">
+            <div class="col">
+              <ul>
+                <li>
+                  Adresse: 650 boul. Arthur-Sauvé, Saint-Eustache, Québec...
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+             
+            </div>
           </div>
-        </div>
 
         <!-- END CONTACT SECTION -->
       </div>
