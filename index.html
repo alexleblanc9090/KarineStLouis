@@ -6,29 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="Alexandre Leblanc">
     <title>Karine St-Louis</title>
-
-    
-
-    <!-- Bootstrap core CSS -->
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    <link href="carousel.css" rel="stylesheet">
 
     <!-- DELETE THIS SECTION WHEN NO NEED FOR MODAL-->
-    <style>
+    <!--<style>
       /* The Modal (background) */
       .modal {
         display: none; /* Hidden by default */
@@ -67,21 +49,39 @@
         text-decoration: none;
         cursor: pointer;
       }
-    </style>
-    <!-- TO BE DELETED -->
-    
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    </style>-->
   </head>
   <body>   
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg otherTest"><!--navbar-dark bg-dark-->
+      <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#">
           <img src="./images/logoOfficiel.png" height="90" class="d-inline-block align-top" alt="">
         </a>
-        <a class="navbar-item mr-auto" href="#contactSection" style="margin-left: auto; margin-right: 10px;">
-          <button type="button" class="btn btn-outline-light">Prendre rendez-vous</button>
-        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1.5em;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link textNavbar" href="#serviceSection">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link textNavbar" href="#aboutSection">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link textNavbar" href="#reviewSection">
+                Témoignages
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link textNavbar" href="#partenaireSection">Partenaires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link textNavbar" href="#contactSection">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -96,7 +96,7 @@
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <!-- END Indicators -->
-
+    
         <!-- CAROUSEL -->
         <div class="carousel-inner">
           <!-- First slide (Active) -->
@@ -174,13 +174,29 @@
       </div>
       <!-- END CAROUSEL SECTION -->
 
-      <hr class="featurette-divider">
+      <hr class="featurette-divider"> <!-- W-100 exception -->
 
+      <!-- MAIN SECTION -->
       <div class="container marketing">
+
+        <!-- Temporary announcement -->
+        <div class="featurette rounded annoncement" style="text-align: center;">
+            <img src="./images/annonce.png" width="50px" height="50px" style="position: relative; top:0; left:0; display: block;"></img>
+              Nous avons présentement des locaux à louer de disponibles.<br>
+              Nos bureaux se trouvent au : 172 Rue Notre-Dame, Repentigny, QC J6A 2P8
+            <div style="margin:10px;">
+              <a href="#contactSection"  style="margin:auto;">
+                <button id="CloseWithTarget" type="button" class="btn btn-outline-dark">Contactez-moi</button>
+              </a>
+            </div>
+        </div>
+        <!-- END - Temporary announcement -->
+
+        <hr class="featurette-divider">
 
         <!-- Service et informations section -->
         <h2 class="featurette-heading">Services offerts</h2>
-        <div class="row featurette lead rounded" style="min-width: 350px; margin: auto;">
+        <div class="row featurette lead rounded" style="min-width: 350px; margin: auto;" id="serviceSection">
           <div class="col">
             <!-- Description of services -->
               <ul>
@@ -202,7 +218,7 @@
                   <b>Évènements sportifs</b><br>
                   Offrez à vos athlètes la présence d’une thérapeute
                   qualifiée en premiers soins et massothérapie sportive en cas de blessures sur le
-                  terrain
+                  terrain.
                 </li>
               </ul>
           </div>
@@ -232,31 +248,31 @@
 
         <!-- BIO -->
 
-        <div class="row featurette">
-          <h2 class="featurette-heading" style="margin-bottom: 30px;">Apprenez à connaître votre kinésithérapeute</h2>
+        <div class="row featurette" id="aboutSection">
+          <h2 class="featurette-heading">
+            Apprenez à connaître votre kinésithérapeute
+          </h2>
           <div class="col">
-            <div style="width: 350px; height:400px; margin:auto;">
-              <img src="./images/Karine.jpg" height="100%" width="100%" class="bioImage"/>
+            <div class="bioImage">
+              <img src="./images/Karine.jpg" height="100%" width="100%"/>
             </div>
           </div>
           <div class="col">
-            <div class="lead rounded margin:auto">
-              <p style="height: fit-content; text-align: justify;">
-                Moi, c'est Karine, kinésithérapeute du sport <br>
-                <p>
-                  Dès mon plus jeune âge, j'avais comme objectif de devenir thérapeute dans le domaine du sport. 
-                  C'est en août 2017 que j'ai débuté ma première formation en massothérapie. Suite à l'obtention de 
-                  mon diplôme, j'ai continué mes études en kinésithérapie sportive. En janvier 2019, 
-                  j'étais officiellement kinésithérapeute ! 
-                </p>
-                <p>
-                  Adepte de défis et de surpassement, 
-                  j'ai accumulé près de 1300h de formations, autant en thérapie manuelle qu'en premiers soins.
-                  Au fil du temps, j'ai eu la chance de rencontrer des gens qui m'ont permis de me 
-                  rapprocher de mon objectif. Je travaille donc, oui en clinique, mais également sur le terrain, 
-                  lors d'évènements sportifs. Je compte plusieurs partenariats, en plus d'être thérapeute d'une 
-                  équipe sportive de la LNHB.
-                </p>
+            <div class="lead rounded" style="min-width: 340px;">
+              <p class="bioText">
+                Moi, c'est Karine,<br><br> kinésithérapeute du sport.<br><br>
+                Dès mon plus jeune âge, j'avais comme objectif de devenir thérapeute dans le domaine du sport. 
+                C'est en août 2017 que j'ai débuté ma première formation en massothérapie. Suite à l'obtention de 
+                mon diplôme, j'ai continué mes études en kinésithérapie sportive. En janvier 2019, 
+                j'étais officiellement kinésithérapeute ! 
+              </p>
+              <p class="bioText">
+                Adepte de défis et de surpassement, 
+                j'ai accumulé près de 1300h de formations, autant en thérapie manuelle qu'en premiers soins.
+                Au fil du temps, j'ai eu la chance de rencontrer des gens qui m'ont permis de me 
+                rapprocher de mon objectif. Je travaille donc, oui en clinique, mais également sur le terrain, 
+                lors d'évènements sportifs. Je compte plusieurs partenariats, en plus d'être thérapeute d'une 
+                équipe sportive de la LNHB.
               </p>
             </div>
           </div>
@@ -264,12 +280,10 @@
 
         <!-- END BIO -->
 
-        <!-- REVIEWS SECTION -->
-
-        <hr class="featurette-divider"> <!-- VALIDATE WITH KARINE -->
-        <!--<h3 style="text-align: center; margin-bottom: 1em;">Témoignages</h3>-->
-        <!-- Review section -->
-        <div class="row gap-2">
+        <hr class="featurette-divider">
+        
+        <!-- REVIEWS SECTION  SECTION -->
+        <div class="row gap-2" id="reviewSection">
           <h2 class="featurette-heading" style="text-align: center;">Témoignages</h2>
           <div class="col rounded reviewCard">
             <h2 class="reviewTitle">Rocky Archambault</h2>
@@ -304,15 +318,16 @@
               Son expertise est irréprochable. 
               Merci ! "
             </p>
-            <p class="reviewStarts"><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
+            <p class="reviewStars"><img src="./images/star-rating.svg" width="200" height="100" class="d-inline-block align-top" alt=""></p>
           </div>
         </div>
+        <!-- END --- REVIEWS SECTION  SECTION -->
 
-        <!--------------------------------------------------------------------------------------->
+       
 
         <hr class="featurette-divider">
         <!-- Review section -->
-        <div class="row gap-2 margin-left: 1em; margin-bottom: 1em;">
+        <div class="row gap-2 margin-left: 1em; margin-bottom: 1em;" id="partenaireSection">
           <h2 class="featurette-heading" style="text-align: center;">Partenaires</h2>
           <div class="col">
             <h2 style="text-align:center">Huskies d’Anjou</h2>
@@ -339,7 +354,7 @@
 
         <!-- END Review section -->
         
-        <hr> <!-- VALIDATE WITH KARINE -->
+        <hr class="featurette-divider">
         
         <!-- MAP SECTION -->
 
@@ -351,65 +366,46 @@
                 </iframe>
                 <a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a>
                 <br>
-                <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style>
                 <a href="https://www.embedgooglemap.net"></a>
-                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
               </div>
             </div>
           </div>
         </div>
 
-        <!--
-
-        -->
-
         <!-- END MAP SECTION -->
 
         <hr class="featurette-divider">
-
         <h2 class="featurette-heading" style="text-align: center;">Contact</h2>
-        <div class="row margin-bottom: 1em;">
+        <div class="row margin-bottom: 1em;" id="contactSection">
           <div class="col">
-            <div class="border border-dark" style="height: 300px; width: 350px;">
+            <div class="border border-dark imageContact">
               <img src="./images/Bureau.JPG" width="100%" height="100%">
             </div>
           </div>
-          <div class="col lead">
-            <div class="margin:auto;">
-              <ul style="list-style-type: none; font-size: x-large;">
-                <li>
-                  <button  class="btn btn-outline-light">
-                    <a href="https://www.google.ca/maps/place/172+Rue+Notre-Dame+%23101,+Repentigny,+QC+J6A+2P8/@45.7180666,-73.4683773,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc8e4237589b3a5:0xb61e141dfb343418!8m2!3d45.7180666!4d-73.4683773" target="_blank">
-                      <img src="./images/itinerairepng.png" width="25px" height="25px"></img>
-                      172 Rue Notre-Dame, Repentigny, QC J6A 2P8
-                    </a>
-                  </button>
-                </li>
-                <li>
-                  <button  class="btn btn-outline-light">
-                    <a href="tel:>514-924-0916" target="_blank">
-                      <img src="./images/phone.png" width="25px" height="25px"></img>
-                      514-924-0916
-                    </a>
-                  </button>
-                </li>
-                <li>
-                  <button  class="btn btn-outline-light">
-                    <a href="mailto:cliniqueksl@gmail.com" target="_blank">
-                      <img src="./images/email.png" width="25px" height="25px"></img>
-                      cliniqueksl@gmail.com
-                    </a>
-                  </button>
-                </li>
-                <li>
-                  <button  class="btn btn-outline-light">
-                    <a href="https://www.facebook.com/massotherapieksl" target="_blank">
-                      <img src="./images/pngegg.png" width="25px" height="25px"></img>
-                      Karine St-Louis Massothérapie
-                    </a>
-                  </button>
-                </li>
-              </ul>
+          <div class="col lead rounded informationContact">
+            <h5 style="text-align: center; margin-bottom: 10px;">Contactez-moi pour prendre rendez-vous</h4>
+            <div style="margin:auto;">
+                <a href="tel:>514-924-0916" target="_blank" class="btn btn-outline-light mb-2 w-100">
+                  <img src="./images/phone.png" width="25px" height="25px"></img>
+                  514-924-0916
+                </a>
+                
+                
+                <a href="mailto:cliniqueksl@gmail.com" target="_blank" class="btn btn-outline-light mb-2 w-100">
+                  <img src="./images/email.png" width="25px" height="25px"></img>
+                  cliniqueksl@gmail.com
+                </a>
+                
+                
+                <a href="https://www.facebook.com/massotherapieksl" target="_blank" class="btn btn-outline-light mb-2 w-100">
+                  <img src="./images/pngegg.png" width="25px" height="25px"></img>
+                  Karine St-Louis Massothérapie
+                </a>
+                <h5 style="text-align: center; margin-bottom: 10px;">Itinéraire</h4>
+                <a class="btn btn-outline-light mb-2 w-100" href="https://www.google.ca/maps/place/172+Rue+Notre-Dame+%23101,+Repentigny,+QC+J6A+2P8/@45.7180666,-73.4683773,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc8e4237589b3a5:0xb61e141dfb343418!8m2!3d45.7180666!4d-73.4683773" target="_blank">
+                  <img src="./images/itinerairepng.png" width="25px" height="25px"></img>
+                  172 Rue Notre-Dame, Repentigny, QC J6A 2P8
+                </a>
             </div>
           </div>
 
@@ -418,8 +414,7 @@
       </div>
 
       <!-- The Modal THAT NEEDS TO BE DELETED WHEN NO MORE ROOMS AVAILABLE -->
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
+      <!--<div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <p>
@@ -456,17 +451,21 @@
             </div>
           </p>
         </div>
-      </div>
+      </div> -->
       <hr class="featurette-divider">
       <!-- FOOTER -->
       <footer class="container">
         <p class="text-center">&copy; 2022 Karine St-Louis massothérapie kinésithérapie, Inc.</p>
       </footer>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- NEEDS TO BE DELETED WHEN NO MORE MODALS -->   
-    <script>
+    <!--<script>
       document.addEventListener('DOMContentLoaded', (event) => {
         // Get the modal
       var modal = document.getElementById("myModal");
@@ -493,7 +492,7 @@
       }
         modal.style.display = "block";
       });
-    </script>
+    </script>-->
     <!-- TO BE DELETED -->
   </body>
 </html>
