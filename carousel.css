@@ -42,7 +42,7 @@ body {
 @media (max-width: 400px) {
   .reviewText{
     height: 150px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 
