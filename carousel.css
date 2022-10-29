@@ -89,7 +89,7 @@ body {
   text-justify: inter-word;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .bioImage{
     width: 300px; 
     height:375px; 
