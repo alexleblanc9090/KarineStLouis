@@ -28,6 +28,15 @@ body {
   color: white;
 }
 
+/* Clinic name */
+
+.clinicNameTitle{
+  font-size:  3em;
+  color:#10336e;
+}
+
+/* END --- Clinic name */
+
 /* REVIEW SECTION */
 
 .reviewTitle{
